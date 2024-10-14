@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+:root {
+    --fuente-patua: "patua One", sans-serif;
+    --color-azul-oscuro: #021c3c;
+    --color-blanco: #fbfbfb;
+    --color-gris: #f2f2f2;
+    --color-negro: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente-patua);
+    background-image: url('/assets/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+/*header*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.header__h1 {
+    font-size: 3rem;
+    position: relative;
+    line-height: 0.9rem;
+    text-transform: uppercase;
+    color: var(--color-negro);
+}
+
+.header__h1:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.664);
+    -webkit-text-stroke: 0.6px rgba(128, 128, 128, 0.664);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: move 5s alternate ease-in-out infinite;
+    }
+
+    @keyframes move {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    /*Main*/
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__form {
+        width: 20%;
+        background-color: var(--color-blanco);
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 2px solid var(--color-negro);
+        border-style: 3px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .main__form__div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        border-radius: 5px;
+        font-family: var(--fuente-patua);
+    }
+
+    .main__form__div__button {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /*button Enviar*/
+    .main__form__button {
+        font-family: var(--fuente-patua);
+        font-size: 1rem;
+        color: var(--color-negro);
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 2px solid #252525;
+        background: white;
+        box-shadow: 3px 3px #252525;
+        cursor: pointer;
+        margin: 20px 0;
+    }
+
+    .main__form__button:active {
+        box-shadow: none;
+        transform: translate(3px, 3px);
+    }

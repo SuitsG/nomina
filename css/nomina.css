@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+
+:root {
+  --fuente-patua: "patua One", sans-serif;
+  --color-azul-oscuro: #021c3c;
+  --color-blanco: #fbfbfb;
+  --color-gris: #f2f2f2;
+  --color-negro: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-patua);
+  background-image: url("/assets/fondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+.header__h1{
+font-size: 3rem;
+
+}
+
+/* Main */
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main__section {
+background-color: var(--color-blanco);
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.main__section__div__p1 {
+    font-size: 1rem;
+  font-weight: bold;
+}
+
+/*button Descargar*/
+.main__section__div__b{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__section__div__button {
+  font-family: var(--fuente-patua);
+  font-size: 1rem;
+  color: var(--color-negro);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #252525;
+  background: white;
+  box-shadow: 3px 3px #252525;
+  cursor: pointer;
+  margin: 20px 0;
+  
+}
+
+.main__section__div__button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}

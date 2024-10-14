@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1" data-text="CONSULTAR NOMINA">CONSULTAR NOMINA</h1>
+    </header>
+    <main class="main">
+      <form class="main__form" action="/information/saveInformation.php" method="POST">
+        <div class="main__form__div">
+          <label for="">Nombre Completo</label>
+          <input type="text" name="nombre"/>
+        </div>
+        <div class="main__form__div">
+          <label for="">Salario mensual</label>
+          <input type="text" name="salarioMensual" />
+        </div>
+        <div class="main__form__div">
+          <label for="">Días laborados</label>
+          <input type="text" name="diasLaborados"/>
+        </div>
+        <div class="main__form__div">
+          <label for="">Horas extras diurnas</label>
+          <input type="text" name="horasDiurnas"/>
+        </div>
+        <div class="main__form__div">
+          <label for="">Horas extras nocturnas</label>
+          <input type="text" name="horasNocturnas"/>
+        </div>
+        <div class="main__form__div">
+          <label for="">Horas extras dominicales</label>
+          <input type="text" name="horasDominicales"/>
+        </div>
+        <div class="main__form__div">
+          <label for="">Comisión</label>
+          <input type="text" name="comision"/>
+        </div>
+        <div class="main__form__div__button">
+          <button type="submit" class="main__form__button">Enviar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
