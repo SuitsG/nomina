@@ -117,3 +117,15 @@ body {
         box-shadow: none;
         transform: translate(3px, 3px);
     }
+
+
+/*Resposividad para pantallas de 1400px*/
+@media only screen and (min-width: 1400px) {
+    .header__h1 {
+        font-size: 4rem;
+        position: relative;
+        line-height: 4rem;
+        text-transform: uppercase;
+        color: var(--color-negro);
+    }
+  }

@@ -1,1 +1,9 @@
-{"nombre":"Laura Tatiana","salarioMensual":"2000000","diasLaborados":"25","horasDiurnas":"50","horasNocturnas":"20","horasDominicales":"10","comision":"50000"}
+{
+  "nombre": "PEPE",
+  "salarioMensual": "2000000",
+  "diasLaborados": "31",
+  "horasDiurnas": "40",
+  "horasNocturnas": "20",
+  "horasDominicales": "10",
+  "comision": "100000"
+}

@@ -60,3 +60,4 @@ function salarioNetoPagar(){
     $salarioNetoPagar = totalDevengados() - $totalDeducidos;
     return round($salarioNetoPagar,0);
 }
+

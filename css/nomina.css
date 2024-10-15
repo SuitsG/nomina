@@ -41,10 +41,14 @@ font-size: 3rem;
 }
 
 .main__section {
+  display: flex;
+  flex-direction: column;
 background-color: var(--color-blanco);
   border: 2px solid black;
   padding: 1rem;
+
 }
+
 
 .main__section__div__p1 {
     font-size: 1rem;
@@ -75,4 +79,16 @@ background-color: var(--color-blanco);
 .main__section__div__button:active {
   box-shadow: none;
   transform: translate(3px, 3px);
+}
+
+/*Resposividad para pantallas de 1400px*/
+@media only screen and (min-width: 1400px) {
+  .header__h1 {
+      font-size: 4rem;
+
+  }
+
+  .main__section{
+    gap: 1rem;
+  }
 }

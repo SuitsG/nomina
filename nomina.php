@@ -73,30 +73,32 @@ deducciones();
             </div>
             <div class="main__section__div">
                 <p class="main__section__div__p1">Total devengados</p>
-                <p class="main__section__div__p"><?= totalDevengados(); ?></p>
+                <p class="main__section__div__p"><?= totalDevengados(); ?> pesos</p>
             </div>
             <div class="main__section__div">
                 <p class="main__section__div__p1">Salud</p>
-                <p class="main__section__div__p"><?= $salud ?></p>
+                <p class="main__section__div__p"><?= $salud ?> pesos</p>
             </div>
             <div class="main__section__div">
                 <p class="main__section__div__p1">Pensión</p>
-                <p class="main__section__div__p"><?= $pension ?></p>
+                <p class="main__section__div__p"><?= $pension ?> pesos</p>
             </div>
             <div class="main__section__div">
                 <p class="main__section__div__p1">Sindicato</p>
-                <p class="main__section__div__p"><?= $sindicato ?></p>
+                <p class="main__section__div__p"><?= $sindicato ?> pesos</p>
             </div>
             <div class="main__section__div">
                 <p class="main__section__div__p1">Total deducidos</p>
-                <p class="main__section__div__p"><?= $totalDeducidos ?></p>
+                <p class="main__section__div__p"><?= $totalDeducidos ?> pesos</p>
             </div>
             <div class="main__section__div">
                 <p class="main__section__div__p1">Salario neto a pagar</p>
                 <p class="main__section__div__p"><?= salarioNetoPagar(); ?> pesos</p>
             </div>
             <div class="main__section__div__b">
+                <form action="/descargarDatos.php" method="POST">
                 <button class="main__section__div__button">Descargar datos</button>
+                </form>
             </div>
         </section>
     </main>
