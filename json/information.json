@@ -1,9 +1,1 @@
-{
-  "nombre": "PEPE",
-  "salarioMensual": "2000000",
-  "diasLaborados": "31",
-  "horasDiurnas": "40",
-  "horasNocturnas": "20",
-  "horasDominicales": "10",
-  "comision": "100000"
-}
+{"nombre":"Manuel","salarioMensual":"23000","diasLaborados":"30","horasDiurnas":"4","horasNocturnas":"5","horasDominicales":"4","comision":"5000"}

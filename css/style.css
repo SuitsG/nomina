@@ -33,7 +33,7 @@ body {
 .header__h1 {
     font-size: 3rem;
     position: relative;
-    line-height: 0.9rem;
+    line-height: 3rem;
     text-transform: uppercase;
     color: var(--color-negro);
 }
