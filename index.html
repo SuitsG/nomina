@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="header__h1" data-text="CONSULTAR NOMINA">CONSULTAR NOMINA</h1>
-    </header>
-    <main class="main">
-      <form class="main__form" action="/information/saveInformation.php" method="POST">
-        <div class="main__form__div">
-          <label for="">Nombre Completo</label>
-          <input type="text" name="nombre" pattern="[a-zA-Z\s]+"
-          title="Solo se permiten letras y espacios" required/>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__h1" data-text="CONSULTAR NOMINA">CONSULTAR NOMINA</h1>
+  </header>
+  <main class="main">
+    <form class="main__form" action="/information/saveInformation.php" method="POST">
+      <div class="main__form__div">
+        <label for="">Nombre Completo</label>
+        <input type="text" name="nombre" pattern="[a-zA-Z\s]+" title="Solo se permiten letras y espacios" required />
+      </div>
+      <div class="main__form__div">
+        <label for="">Salario mensual</label>
+        <input type="number" name="salarioMensual" title="Deben ser datos numericos" required />
+      </div>
+      <div class="main__form__div">
+        <label for="">Días laborados</label>
+        <input type="number" name="diasLaborados" max="31" title="Deben ser datos numericos" required />
+      </div>
+      <div class="main__form__div">
+        <label for="">Horas extras diurnas</label>
+        <input type="number" name="horasDiurnas" max="40" title="Deben ser datos numericos" required />
+      </div>
+      <div class="main__form__div">
+        <label for="">Horas extras nocturnas</label>
+        <input type="number" name="horasNocturnas" max="40" title="Deben ser datos numericos" required />
+      </div>
+      <div class="main__form__div">
+        <label for="">Horas extras dominicales</label>
+        <input type="number" name="horasDominicales" max="40" title="Deben ser datos numericos" required />
+      </div>
+
+      <div class="main__form__div">
+        <label for="">Comisión</label>
+        <input type="number" name="comision" title="Deben ser datos numericos" required />
+      </div>
+      <div>
+          <p>Tiene subsidio de transporte</p>
+          <label for="si">Sí</label>
+          <input type="radio" id="si" name="subsidio" value="si" required/>
+          <label for="no">No</label>
+          <input type="radio" id="no" name="subsidio" value="no" required/>
         </div>
-        <div class="main__form__div">
-          <label for="">Salario mensual</label>
-          <input type="number" name="salarioMensual" 
-          title="Deben ser datos numericos" required/>
-        </div>
-        <div class="main__form__div">
-          <label for="">Días laborados</label>
-          <input type="number" name="diasLaborados" max="31"
-          title="Deben ser datos numericos" required/>
-        </div>
-        <div class="main__form__div">
-          <label for="">Horas extras diurnas</label>
-          <input type="number" name="horasDiurnas" max="40"
-          title="Deben ser datos numericos" required/>
-        </div>
-        <div class="main__form__div">
-          <label for="">Horas extras nocturnas</label>
-          <input type="number" name="horasNocturnas"  max="40"
-          title="Deben ser datos numericos" required/>
-        </div>
-        <div class="main__form__div">
-          <label for="">Horas extras dominicales</label>
-          <input type="number" name="horasDominicales" max="40"
-          title="Deben ser datos numericos" required/>
-        </div>
-        <div class="main__form__div">
-          <label for="">Comisión</label>
-          <input type="number" name="comision"
-        title="Deben ser datos numericos" required/>
-        </div>
-        <div class="main__form__div__button">
-          <button type="submit" class="main__form__button">Enviar</button>
-        </div>
-      </form>
-    </main>
-  </body>
+
+      <div class="main__form__div__button">
+        <button type="submit" class="main__form__button">Enviar</button>
+      </div>
+    </form>
+  </main>
+</body>
+
 </html>

@@ -3,6 +3,7 @@ require_once ($_SERVER['DOCUMENT_ROOT']) . '/functions/functions.php';
 ultimoCliente();
 imprimirHoras();
 deducciones();
+subsidio();
 
 ?>
 
@@ -12,7 +13,7 @@ deducciones();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nomina</title>
     <link rel="stylesheet" href="/css/nomina.css">
 </head>
 
@@ -92,9 +93,14 @@ deducciones();
                 <p class="main__section__div__p"><?= $totalDeducidos ?> pesos</p>
             </div>
             <div class="main__section__div">
+                <p class="main__section__div__p1"><?=$mensaje; ?></p>
+                <p class="main__section__div__p"><?= $subsidioTransporte."".$pesos?> </p>
+            </div>
+            <div class="main__section__div">
                 <p class="main__section__div__p1">Salario neto a pagar</p>
                 <p class="main__section__div__p"><?= salarioNetoPagar(); ?> pesos</p>
             </div>
+            
             <div class="main__section__div__b">
                 <form action="/descargarDatos.php" method="POST">
                 <button class="main__section__div__button">Descargar datos</button>

@@ -13,7 +13,7 @@ $clientes = json_decode($jsonContenido, true);
 
 function ultimoCliente()
 {
-    global $clientes, $nombre, $salarioMensual, $diasLaborados, $horasDiurnas, $horasNocturnas, $horasDominicales, $comision;
+    global $clientes, $nombre, $salarioMensual, $diasLaborados, $horasDiurnas, $horasNocturnas, $horasDominicales, $comision, $subsidio;
     
     $nombre = $clientes['nombre'];
     $salarioMensual = $clientes['salarioMensual'];
@@ -22,6 +22,8 @@ function ultimoCliente()
     $horasNocturnas = $clientes['horasNocturnas'];
     $horasDominicales = $clientes['horasDominicales'];
     $comision = $clientes['comision'];
+    $subsidio = $clientes['subsidio'];
+
 }
 
 ?>

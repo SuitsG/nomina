@@ -1,4 +1,5 @@
-<?php
+<?php   
+
 require_once ($_SERVER['DOCUMENT_ROOT']) . '/information/accessInformation.php';
 require_once ($_SERVER['DOCUMENT_ROOT']) . '/functions/functions.php';
 require('fpdf/fpdf.php');  // Asegúrate de que la ruta es correcta para tu estructura de proyecto
@@ -6,6 +7,8 @@ require('fpdf/fpdf.php');  // Asegúrate de que la ruta es correcta para tu estr
 ultimoCliente();
 imprimirHoras();
 deducciones();
+subsidio();
+
 
 // Inicia la creación del PDF
 class PDF extends FPDF
@@ -55,6 +58,7 @@ $pdf->Cell(0,10,"Salud: $salud pesos",0,1);
 $pdf->Cell(0,10,"Pension: $pension pesos",0,1);
 $pdf->Cell(0,10,"Sindicato: $sindicato pesos",0,1);
 $pdf->Cell(0,10,"Total Deducidos: $totalDeducidos pesos",0,1);
+$pdf->Cell(0,10,"$mensaje $subsidioTransporte $pesos",0,1);
 $pdf->Cell(0,10,"Salario Neto a Pagar: " . salarioNetoPagar() . " pesos",0,1);
 
 // Descargar el PDF

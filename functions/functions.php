@@ -7,6 +7,8 @@ $precioHorasDiurnas = 1500;
 $precioHorasNocturas = 2000;
 $precioHorasDominicales = 2500;
 $mes = 30;
+$subsidioTransporte= 0;
+$mensaje="";
 
 function imprimirHoras()
 {
@@ -54,10 +56,29 @@ function deducciones()
     $totalDeducidos = round($salud + $pension + $sindicato,0);
 }
 
-function salarioNetoPagar(){
-    global $totalDeducidos, $salarioNetoPagar;
+function subsidio(){
 
-    $salarioNetoPagar = totalDevengados() - $totalDeducidos;
+    global $mensaje, $subsidio, $subsidioTransporte, $pesos;
+
+    if ($subsidio==="si") {
+        $mensaje="Subsidio Transporte";
+        $subsidioTransporte=165000;
+        $pesos=" pesos";
+    } else {
+        $mensaje="";
+    $subsidioTransporte="";
+    $pesos="";
+    }
+}
+
+
+
+function salarioNetoPagar(){
+    global $totalDeducidos, $salarioNetoPagar, $subsidioTransporte;
+$subsidioTransporte = !empty($subsidioTransporte) ? $subsidioTransporte : 0;
+
+    $salarioNetoPagar = totalDevengados() - $totalDeducidos + $subsidioTransporte;
     return round($salarioNetoPagar,0);
 }
 
+?>

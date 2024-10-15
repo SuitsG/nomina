@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $horasNocturnas = $_POST['horasNocturnas'];
     $horasDominicales = $_POST['horasDominicales'];
     $comision = $_POST['comision'];
+    $subsidio =$_POST['subsidio'];
 
 
     // Generar un identificador único para el nuevo cliente
@@ -26,7 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         "horasDiurnas" => $horasDiurnas,
         "horasNocturnas" => $horasNocturnas,
         "horasDominicales" => $horasDominicales,
-        "comision" => $comision
+        "comision" => $comision,
+        "subsidio" => $subsidio
     ];
 
 
