@@ -13,13 +13,15 @@ subsidio();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nomina</title>
+    <title>Nómina</title>
     <link rel="stylesheet" href="/css/nomina.css">
+    <link rel="icon" type="image/x-icon" href="assets/nomina.png">
+
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__h1">Nomina</h1>
+        <h1 class="header__h1">NÓMINA</h1>
 
     </header>
     <main class="main">
@@ -29,11 +31,11 @@ subsidio();
                 <p class="main__section__div__p"><?= $nombre; ?></p>
             </div>
             <div class="main__section__div">
-                <p class="main__section__div__p1">Salario Mensual</p>
+                <p class="main__section__div__p1">Salario mensual</p>
                 <p class="main__section__div__p"><?= $salarioMensual ?> pesos</p>
             </div>
             <div class="main__section__div">
-                <p class="main__section__div__p1">Dias laborados</p>
+                <p class="main__section__div__p1">Días laborados</p>
                 <p class="main__section__div__p"><?= $diasLaborados; ?></p>
             </div>
             <div class="main__section__div">

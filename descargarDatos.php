@@ -18,7 +18,7 @@ class PDF extends FPDF
     {
         // Título
         $this->SetFont('Arial','B',12);
-        $this->Cell(0,10,'Resumen de Nomina',0,1,'C');
+        $this->Cell(0,10,'RESUMEN DE LA NOMINA',0,1,'C');
         $this->Ln(5);
     }
 
@@ -43,23 +43,23 @@ $pdf->SetFont('Arial','',12);
 
 // Añadir los datos al PDF
 $pdf->Cell(0,10,"Nombre: $nombre",0,1);
-$pdf->Cell(0,10,"Salario Mensual: $salarioMensual pesos",0,1);
-$pdf->Cell(0,10,"Dias Laborados: $diasLaborados",0,1);
+$pdf->Cell(0,10,"Salario mensual: $salarioMensual pesos",0,1);
+$pdf->Cell(0,10,"Dias laborados: $diasLaborados",0,1);
 $pdf->Cell(0,10,"Total salario: " . salario() . " pesos",0,1);
-$pdf->Cell(0,10,"Horas Diurnas: $horasDiurnas",0,1);
-$pdf->Cell(0,10,"Horas Nocturnas: $horasNocturnas",0,1);
-$pdf->Cell(0,10,"Horas Dominicales: $horasDominicales",0,1);
-$pdf->Cell(0,10,"Total Horas Extras Diurnas: $imprimirHorasDiurnas pesos",0,1);
-$pdf->Cell(0,10,"Total Horas Extras Nocturnas: $imprimirHorasNocturnas pesos",0,1);
-$pdf->Cell(0,10,"Total Horas Extras Dominicales: $imprimirHorasDominicales pesos",0,1);
+$pdf->Cell(0,10,"Horas diurnas: $horasDiurnas",0,1);
+$pdf->Cell(0,10,"Horas nocturnas: $horasNocturnas",0,1);
+$pdf->Cell(0,10,"Horas dominicales: $horasDominicales",0,1);
+$pdf->Cell(0,10,"Total horas extras diurnas: $imprimirHorasDiurnas pesos",0,1);
+$pdf->Cell(0,10,"Total horas extras nocturnas: $imprimirHorasNocturnas pesos",0,1);
+$pdf->Cell(0,10,"Total horas extras dominicales: $imprimirHorasDominicales pesos",0,1);
 $pdf->Cell(0,10,"Comisiones: $comision pesos",0,1);
 $pdf->Cell(0,10,"Total Devengados: " . totalDevengados() . " pesos",0,1);
 $pdf->Cell(0,10,"Salud: $salud pesos",0,1);
 $pdf->Cell(0,10,"Pension: $pension pesos",0,1);
 $pdf->Cell(0,10,"Sindicato: $sindicato pesos",0,1);
-$pdf->Cell(0,10,"Total Deducidos: $totalDeducidos pesos",0,1);
+$pdf->Cell(0,10,"Total deducidos: $totalDeducidos pesos",0,1);
 $pdf->Cell(0,10,"$mensaje $subsidioTransporte $pesos",0,1);
-$pdf->Cell(0,10,"Salario Neto a Pagar: " . salarioNetoPagar() . " pesos",0,1);
+$pdf->Cell(0,10,"Salario neto a pagar: " . salarioNetoPagar() . " pesos",0,1);
 
 // Descargar el PDF
 $pdf->Output('I', 'nomina_resumen.pdf');

@@ -61,7 +61,7 @@ function subsidio(){
     global $mensaje, $subsidio, $subsidioTransporte, $pesos;
 
     if ($subsidio==="si") {
-        $mensaje="Subsidio Transporte";
+        $mensaje="Subsidio de transporte";
         $subsidioTransporte=165000;
         $pesos=" pesos";
     } else {
